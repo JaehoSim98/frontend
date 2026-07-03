@@ -1,31 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      #number {
+        width: 5em;
+        height: 5em;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>입력양식</h1>
-    <form action="loginAction.html" method="get" name="loginForm" target="_self">
-        id : <input type="text" name="id" minlength="4" maxlength="12"><br>
-        아이디는 4자이상 12자 이하로 작성 가능합니다.<br>
-        pw : <input type="password" name="pw" required><br>
-        <input type="button" value="Login"><br>
-        <input type="reset" value="Reset"><br>
-        <input type="submit" value="Submit">
+    <form
+      action="loginAction.html"
+      method="get"
+      name="loginForm"
+      target="_self"
+    >
+      id : <input type="text" name="id" minlength="4" maxlength="12" /><br />
+      아이디는 4자이상 12자 이하로 작성 가능합니다.<br />
+      pw : <input type="password" name="pw" required /><br />
+      <input type="button" value="Login" /><br />
+      <input type="reset" value="Reset" /><br />
+      <input type="submit" value="Submit" />
     </form>
-    <hr>
+    <hr />
+
     <h1>입력양식의 종류</h1>
     <form action="">
-        text: <input type="text" value="shit"><br>
-        password: <input type="password" name="pw" id="pw"><br>
-        button: <input type="button" value="button"><br>
-        checkbox: <input type="checkbox" name="checkbox" id=""><br>
-        search: <input type="search" name="" id=""><br>
-        url: <input type="url" name="" id=""><br>
-        email: <input type="email" name="" id=""><br>
-        <input type="submit" value="Sign in">
+      <fieldset>
+        <legend>텍스트 입력 양식</legend>
+        <label for="test">
+            text: <input id="test" type="text" />
+        </label><br>
+
+        <label for="id">id: </label>
+        <input type="text" name="id" id="id"><br>
+
+        <label for="pw">password: </label>
+        <input type="password" name="pw" id="pw"><br>
+
+        button: <input type="button" value="button" /><br />
+        search: <input type="search" name="" id="" /><br />
+        url: <input type="url" name="" id="" /><br />
+        email: <input type="email" name="" id="" /><br />
+        <input type="submit" value="Sign in" />
+      </fieldset>
+
+      <fieldset>
+        취미
+        <input type="checkbox" name="축구" id="" value="1" />축구
+        <input type="checkbox" name="농구" id="" value="2" />농구
+        <input type="checkbox" name="배구" id="" value="3" />배구
+        <input type="checkbox" name="야구" id="" value="4" />야구<br />
+        성별
+        <input type="radio" name="gender" id="" />남
+        <input type="radio" name="gender" id="" />여
+        <input
+          type="number" name="" id="number" max="100" min="1" step="10"/>
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
