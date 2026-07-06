@@ -13,16 +13,15 @@
 </head>
 <body>
     <form action="서버페이지주소.php" method="post"> 
-        
         <fieldset>
             <legend>상품 선택</legend>
             <br>
             <b>주문할 상품을 선택해 주세요.</b>
             <ul>
-                <li><input type="checkbox" name="" id="">선물용 3kg <input type="number" max="5">개 (최대 5개)</li>
-                <li><input type="checkbox" name="" id="">선물용 5kg <input type="number" max="3">개 (최대 3개)</li>
-                <li><input type="checkbox" name="" id="">가정용 3kg <input type="number" max="5">개 (최대 5개)</li>
-                <li><input type="checkbox" name="" id="">가정용 5kg <input type="number" max="32">개 (최대 3개)</li>
+                <li><input type="checkbox" name="" id="">선물용 3kg <input type="number" max="5" min="0">개 (최대 5개)</li>
+                <li><input type="checkbox" name="" id="">선물용 5kg <input type="number" max="3" min="0">개 (최대 3개)</li>
+                <li><input type="checkbox" name="" id="">가정용 3kg <input type="number" max="5" min="0">개 (최대 5개)</li>
+                <li><input type="checkbox" name="" id="">가정용 5kg <input type="number" max="3" min="0">개 (최대 3개)</li>
             </ul>
             <b>포장 선택</b>
             <ul>
@@ -47,7 +46,6 @@
             <input type="submit" value="주문하기"> 
             <input type="reset" value="취소하기">
         </div>
-
     </form>
 </body>
 </html>

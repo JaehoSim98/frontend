@@ -1,0 +1,39 @@
+/* 
+    css 선택자
+    요소를 선택하는 3가지 방법
+    class
+    id
+    tag name
+
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    background-color: rgb(252, 206, 234);
+    border: 1px solid #111;
+    border-radius: 5px;
+    padding: 10px;
+    width: 4em;
+    margin: 100px;
+}
+
+/* 
+class를 이용해서 요소에 스타일을 적용
+1. 스타일 정의
+2. 요소의 class 속성에 값을 입력
+*/
+
+/* 글자색을 붉은 색으로 바꿔주는 스타일 */
+.red { 
+    color: rgb(143, 2, 2);
+}
+
+#name {
+    color: blue;
+    border-radius: 100px;
+    padding: 5px;
+}
