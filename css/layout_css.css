@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none; /* text에 밑줄 생기는거 없앰*/
+    color: #49070746
+}
+
+.badge {
+  border: 1px solid;
+  position: relative; /* 부모 상자로서의 역할을 할 수 있게 됨 */
+}
+
+.badgeBtn {
+  position: relative;
+  border: none; /* button border off */
+  padding: 10px 20px; /* 상하: 10, 좌우: 20 */
+  font-weight: bold;
+}
+
+.badgeImg {
+  position: absolute; /* 이렇게 하면 부모 상자 내부에서의 위치를 할당할 수 있음 */
+  top: -10px;
+  left: 30px;
+  background-color: red;
+  /* text-align: center; */
+  display: inline-block;
+  border-radius: 50%; /* 원 모양으로 만들기 */
+  padding: 5px;
+}
+
+.fixedbox {
+  position: fixed; /* 스크롤해도 화면에서 고정됨, ex)설정 아이콘 고정 */
+  top: 10px;
+  right: 10px;
+  background-color: blue;
+}
+
+body {
+  height: 200vh;
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItem {
+    padding: 10px 20px;
+    background-color: rgb(245, 104, 191);
+    border: 1px solid;
+}
+
+/* 
+.menu li:first-of-type {
+    margin-left: 0px;
+    background-color: red;
+} menu가 가진 li 요소 중에서 첫번째 */
+
+.menuItem:hover {
+    background-color: rgb(252, 242, 242);
+} 
+/* 마우스를 올리면 생기는 변화 설정 = hover*/
+
+.submenu {
+    position: absolute;
+    top: 160px;
+}
+
+/* 
+    화면에서 요소를 제거하는 방법
+    display: none -> block
+    visibility: hidden -> visible
+*/
+.submenu li {
+    position: relative;
+    background-color: blueviolet;
+}
+
+.menu1 {
+    display: flex;
+}
+
+
+.menu_item {
+    position: relative;
+    padding: 0px 10px;
+    height: 40px; /* height, line-height를 주면 세로 가운데 정렬*/
+    line-height: 40px;
+    background-color: pink;
+}
+
+.submenu1 {
+    position: absolute;
+    top: 50px;
+    /* left: 0px; */
+    width: 100px;
+    background-color: bisque;
+    padding-left: 10px;
+    display: none;
+}
+
+.menu_item:hover > .submenu1, .menu_item:hover{
+    background-color: blueviolet;
+    display: block;
+}

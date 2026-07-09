@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Poor Story", system-ui;
+  font-weight: bold;
+}
+
+.modal-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #796a6a;
+  inset: 0;
+  position: fixed;
+}
+
+.modal-box {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+}
+
+.modal-box input {
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  font-size: 15px;
+  padding-left: 5px;
+  margin: 5px 0px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+  border: none;
+  font-size: 2rem;
+  color: #666;
+}
+
+.btn {
+  /* position: absolute; */
+  display: inline-block;
+  background-color: #7eaef7;
+  /* width: 100%; */
+  border: none;
+  cursor: pointer;
+  /* font-family: inherit;
+  font-weight: inherit; */
+  font: inherit;
+}
+
+/* 세로 마진이 중첩되는 경우, 큰쪽으로 표현된다 */
+.modal-box h3,
+.modal-box h6 {
+  margin: 0px;
+}
+
+#modalContent {
+  display: inline-block;
+  background-color: #7eaef7;
+  color: rgb(0, 0, 0);
+  margin: 5px 0px;
+}
+
